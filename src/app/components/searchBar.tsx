@@ -58,7 +58,6 @@ const HotelSearchBar = ({ onSearch }: { onSearch: (params: any) => void }) => {
     if (savedCriancas) setCriancas(Number(savedCriancas));
   }, []);
 
-  // Armazena os dados no localStorage sempre que houver alterações
   useEffect(() => {
     localStorage.setItem("local", local);
     if (entrada) localStorage.setItem("entrada", entrada.toISOString());
