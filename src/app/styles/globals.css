@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #E3EBF3;
+  --foreground: #00264D;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+
+@layer components {
+  .input-custom {
+    @apply h-[26px] text-text text-[12px] font-bold leading-[26px] 
+           text-left border-none p-0 font-poppins bg-transparent 
+           focus:outline-none focus:ring-0 focus:bg-transparent 
+           placeholder:text-text;
+          }
+
+
+  @layer components {
+    .label-custom {
+      @apply text-[14px] font-normal leading-[26px] text-left text-caption font-poppins;
+    }
+  }
+  
+}
